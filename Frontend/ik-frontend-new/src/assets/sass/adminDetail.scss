@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+.admin-detail-container {
+    display: flex ;
+    align-items: start;
+    font-family: sans-serif;
+    font-size: 14px;
+    .button-container {
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-width: 350px;
+        button {
+            width: 140px;
+            height: 40px;
+            font-size: larger;
+            margin: 5px auto;
+            padding: 8px 14px;
+            border: none;
+            border-radius: 8px;
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+        }
+
+        .view-detail {
+            background-color: #4b6b84ff;
+            width: 150px; 
+            height: 50px;
+        }
+
+        .update {
+            background-color: #f5c95b;
+            width: 150px; 
+            height: 50px;
+        }
+    }
+}
+
+.admin-detail-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 16px;
+    width: 700px;
+    height: 550px;
+    padding: 10px;
+    transition: all 0.5s ease-out;
+    box-shadow: 1px -1px 32px 9px rgba(201, 201, 201, 0.21);
+    border: 1px solid #e2e2e2a4;
+    .name-label{
+        color: #000000;
+        font-size: 2vh;
+        text-align: center;
+        padding-top: 0px;
+    }
+    &.open {
+        width: 900px;
+        text-align: left;
+    }
+
+    img {
+        margin: 10px auto;
+        border-radius: 50%;
+        height: 175px;
+        width: 175px;
+        object-fit: cover;
+    }
+
+    p {
+        padding-top: 6px;
+    }
+
+    p.label {
+        color: #000000;
+        font-weight: bold;
+    }
+
+    p.detail-item {
+        color: rgb(95, 89, 89);
+    }
+
+    .card-container {
+        display: flex;
+        height: 400px;
+    }
+}
+
+.constant-details {
+    width: 100%;
+    word-wrap: break-word;
+    transition: all 0.3s ease-out;
+
+    &.open {
+        width: 50%;
+        /* Set to a value large enough to accommodate the content */
+    }
+}
+
+.additional-details {
+    width: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+    padding-top: 16px;
+
+    &.open {
+        width: 50%;
+        /* Set to a value large enough to accommodate the content */
+    }
+}
+
+p.is-active {
+    border-radius: 8px;
+    padding: 4px 0px;
+    margin: 6px 25px 0px 25px;
+    text-align: center;
+}
+
+.update-card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+    font-family: sans-serif;
+
+    label {
+        margin-top: 12px;
+        font-weight: bold;
+    }
+
+    input {
+        margin-top: 12px;
+        border: none;
+        height: 30px;
+        border-radius: 8px;
+        padding-left: 10px;
+        outline: none;
+        width: 300px;
+        border: 1px solid #e2e2e2a4;
+    }
+
+    /* file upload button */
+    input[type="file"] {
+        position: relative;
+        height: 49px;
+        &::file-selector-button {
+            width: 120px;
+            color: transparent;
+            border-radius: 4px;
+            padding: 0px 16px;
+            height: 35px;
+            cursor: pointer;
+            background-color: white;
+            border: 1px solid rgba(0, 0, 0, 0.16);
+            box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
+            margin-right: 16px;
+            transition: background-color 300ms;
+        }
+
+        &::before {
+            position: absolute;
+            pointer-events: none;
+            top: 10px;
+            left: 16px;
+            height: 20px;
+            width: 20px;
+            content: "";
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230964B0'%3E%3Cpath d='M18 15v3H6v-3H4v3c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-3h-2zM7 9l1.41 1.41L11 7.83V16h2V7.83l2.59 2.58L17 9l-5-5-5 5z'/%3E%3C/svg%3E");
+        }
+
+        &::after {
+            position: absolute;
+            pointer-events: none;
+            top: 14px;
+            left: 40px;
+            color: #0964b0;
+            content: "Upload File";
+        }
+
+        &::file-selector-button:hover {
+            background-color: #0965b068;
+        }
+    }
+    input[type="tel"] {
+        width: 180px;
+    }
+
+    .update-button {
+        width: 140px;
+        height: 40px;
+        margin: 25px auto;
+        padding: 8px 14px;
+        border: none;
+        border-radius: 8px;
+        background-color: #f5c95b;
+    }
+
+    &.open {
+        width: 100%;
+    }
+
+    .adres-group {
+        display: flex;
+        flex-direction: column;
+        margin-top: 8px;
+        border: 1px solid rgba(144, 144, 144, 0.507);
+        border-radius: 8px;
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 431px) {
+    .admin-detail-container {
+        display: block !important;
+        height: auto !important;
+    }
+
+    .admin-detail-card {
+        display: block;
+        border-radius: 16px;
+        width: 100%;
+        transition: all 0.3s ease-out;
+        .card-container {
+            display: block !important;
+            flex-direction: row !important;
+        }
+
+        &.open {
+            width: auto !important ;
+
+            .card-container {
+                display: block !important;
+                height: auto !important;
+            }
+        }
+    }
+    .constant-details.open,
+    .additional-details.open {
+        width: auto !important;
+    }
+    .update-card.open{
+        width: auto !important;
+    }
+    .update-card{
+        margin: 10px 0px !important;
+    }
+    .button-container{
+        display: flex !important;
+        width: 100% !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .admin-detail-container {
+        flex-direction: column;
+    }
+
+    .update-card {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        overflow: hidden;
+        transition: all 0.3s ease-out;
+        border-radius: 16px;
+        height: 0;
+        padding: 0px;
+
+        &.open {
+            height: auto;
+            padding: 10px;
+        }
+    }
+}

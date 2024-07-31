@@ -1,0 +1,54 @@
+.companydetail-container {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .companydetail-container.active {
+    border-color: green;
+  }
+  
+  .companydetail-container.inactive {
+    border-color: red;
+  }
+  
+  .company-logo {
+    max-width: 100px;
+    max-height: 100px;
+    display: block;
+    margin: 0 auto 16px;
+  }
+  
+  .company-name {
+    font-size: 24px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  
+  .details {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  }
+  
+  .labels, .values {
+    flex: 1;
+  }
+  
+  .labels {
+    text-align: left;
+  }
+  
+  .values {
+    text-align: left;
+  }
+  
+  p {
+    margin: 14px 0;
+    line-height: 1.5;
+  }
+  

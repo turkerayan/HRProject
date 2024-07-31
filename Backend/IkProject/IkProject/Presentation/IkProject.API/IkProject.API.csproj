@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\IkProject.Application\IkProject.Application.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\IkProject.Infrastructure\IkProject.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\IkProject.Persistence\IkProject.Persistence.csproj" />
+    <ProjectReference Include="..\..\Mapper\IkProject.Mapper\IkProject.Mapper.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\images\expenses\" />
+    <Folder Include="wwwroot\images\companies\" />
+    <Folder Include="wwwroot\images\permissions\" />
+    <Folder Include="wwwroot\images\profiles\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="appsettings.Production.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+	
+
+</Project>

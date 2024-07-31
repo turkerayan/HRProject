@@ -1,0 +1,52 @@
+@import url("../sass/style.scss");
+@import url("./root.css");
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&display=swap');
+@import url(./Table.css);
+@import url(./modal.css);
+html {
+    box-sizing: border-box;
+
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+    font-family: monospace;
+  }
+  
+  body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
+    margin: 0;
+  }
+
+  
+  ul, ol {
+    padding: 0;
+    list-style: none;
+  }
+  
+  body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    overflow-x: hidden;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  button:focus, input:focus, textarea:focus, select:focus {
+    outline: none;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+
+
+
+
+
+

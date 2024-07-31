@@ -1,0 +1,122 @@
+:root {
+    --background: #fff;
+    --light-pink: #fcd1d1;
+    --light-beige: #ece2e1;
+    --pale-yellow: #f5f7e1;
+    --light-blue-grey: #d3e0dc;
+    --light-blue: #aee1e1;
+    --mint-cream: #f4f9f9;
+    --light-cyan: #ccf2f4;
+    --non-photo-blue: #a4ebf3;
+    --light-gray: #aaaaaa;
+    --montagu-slab: "Montagu Slab", serif;
+
+
+    /* Backgorund renkeleri */
+    --bg-danger:#fa8178;
+    --bg-success:#5cad76 ;
+    --bg-warning:#f5c95b;
+
+    /* Text renkeleri */
+    --text-danger:#fa8178;
+    --text-success:#5cad76;
+    --text-warning:#f5c95b;
+
+    /* Button renklerinin hoverlari ana rengin opacity sinin 0.8 kadar olmasi gerekmektedir.  */
+    
+    --btn-info: #4b6b84ff;
+    --btn-info-hover: #4b6b84cc;
+
+
+    --btn-danger:#fa8178;
+    --btn-danger-hover:#fa8178cc;
+
+
+    --btn-warning: #f5c95b;
+    --btn-warning-hover: #f5c95bcc;
+
+    --btn-success :#5cad76;
+    --btn-success-hover:#5cad76cc;
+
+    --air-superiority-blue: #79a1bbff;
+    --alice-blue: #e4eff6ff;
+    --columbia-blue: #c8eafeff;
+}
+
+label {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 400;
+    font-family: "Times New Roman", Times, serif;
+}
+input {
+    border-radius: 4px;
+    padding: 0.4rem 0.35rem;
+    border: 1px solid #b3b3b3;
+    width: 100%;
+}
+.border{
+    font-weight: 600;
+}
+input::placeholder {
+    color: var(--light-gray);
+}
+.bg-danger{
+    background-color: var(--bg-danger) !important;
+}
+.bg-success{
+    background-color: var(--bg-success) !important;
+}
+.disable{
+    pointer-events: none;
+    cursor: none;
+}
+.text-danger{
+    color: var(--text-danger) !important;
+}
+.text-warning{
+    color: var(--text-warning) !important;
+}
+.text-success{
+    color: var(--text-success) !important;
+}
+.btn {
+    border-radius: 4px;
+    margin-top: 1rem;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 0.55rem 0.68rem;
+    font-size: 1rem;
+    transition: 0.3s;
+    font-family: var(--montagu-slab);
+    color: #fff;
+}
+.btn-blue {
+    background-color: var(--btn-info);
+}
+.btn-blue:hover {
+    background-color: var(--btn-info-hover);
+}
+.btn-danger{
+    background-color: var(--btn-danger);
+}
+.btn-danger:hover{
+    background-color: var(--btn-danger-hover) ;
+}
+.btn-warning {
+    background-color: var(--btn-warning);
+}
+.btn-warning:hover {
+    background-color: var(--btn-warning-hover);
+}
+.btn-success{
+    background-color: var(--btn-success);
+}
+.btn-success:hover{
+    background-color: var(--btn-success-hover);
+}
+.btn-white{
+    background-color: #fff;
+}
